@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "609496792006",
+    "firebase_url": "https://projetofatec-ce00e.firebaseio.com",
+    "project_id": "projetofatec-ce00e",
+    "storage_bucket": "projetofatec-ce00e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:609496792006:android:b42b6f3539172fb73610c7",
+        "android_client_info": {
+          "package_name": "com.darquinnv.projetofatec"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "609496792006-pl2k3lpdnr9cnr5s8gs5qtebgg29163i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDguxDfHGqhZK69fITQosQG9MqZCnbLinA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "609496792006-pl2k3lpdnr9cnr5s8gs5qtebgg29163i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
