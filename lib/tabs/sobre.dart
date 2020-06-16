@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:projetofatec/tabs/home_tab.dart';
+import 'package:projetofatec/tabs/meusjogos.dart';
+import 'package:projetofatec/tabs/carrinho.dart';
 
 
 
@@ -128,12 +130,12 @@ class SobreDev extends StatelessWidget {
               ListTile(
                 leading:  Icon(Icons.account_circle),
                 //trailing:  Icon(Icons.home),
-                title: Text("Minha Conta"),
+                title: Text("Comprar"),
                 onTap: () {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (BuildContext context) => InicioTab()));
+                          builder: (BuildContext context) => CarrinhoCompras()));
                 },
               ),
               ListTile(
@@ -144,7 +146,7 @@ class SobreDev extends StatelessWidget {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (BuildContext context) => InicioTab()));
+                          builder: (BuildContext context) => MeusJogos()));
                 },
               ),
               ListTile(

@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:projetofatec/tabs/home_tab.dart';
+import 'package:projetofatec/tabs/meusjogos.dart';
 
 
 void main() => runApp(MyApp());
@@ -232,7 +233,7 @@ class _CarrinhoComprasState extends State<CarrinhoCompras> {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (BuildContext context) => InicioTab()));
+                            builder: (BuildContext context) => MeusJogos()));
                   },
                 ),
                 ListTile(
