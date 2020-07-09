@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "609496792006",
-    "firebase_url": "https://projetofatec-ce00e.firebaseio.com",
-    "project_id": "projetofatec-ce00e",
-    "storage_bucket": "projetofatec-ce00e.appspot.com"
+    "project_number": "294212032984",
+    "firebase_url": "https://nubgames-aaf15.firebaseio.com",
+    "project_id": "nubgames-aaf15",
+    "storage_bucket": "nubgames-aaf15.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:609496792006:android:b42b6f3539172fb73610c7",
+        "mobilesdk_app_id": "1:294212032984:android:9999083d4746eb3dc5baad",
         "android_client_info": {
-          "package_name": "com.darquinnv.projetofatec"
+          "package_name": "com.nubgames.projetofatec"
         }
       },
       "oauth_client": [
         {
-          "client_id": "609496792006-pl2k3lpdnr9cnr5s8gs5qtebgg29163i.apps.googleusercontent.com",
+          "client_id": "294212032984-2unuquqfvj3fr483fkqkfot7bkj3rjdr.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDguxDfHGqhZK69fITQosQG9MqZCnbLinA"
+          "current_key": "AIzaSyC2D0Tz0RzxJNkRhqHKp7YDhkhYExfXTwc"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "609496792006-pl2k3lpdnr9cnr5s8gs5qtebgg29163i.apps.googleusercontent.com",
+              "client_id": "294212032984-2unuquqfvj3fr483fkqkfot7bkj3rjdr.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

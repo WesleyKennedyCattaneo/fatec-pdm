@@ -15,30 +15,7 @@ class  TelaInicial extends StatelessWidget {
     children: <Widget>[
       HomeTab()
     ],
-
-
     )
-
-
-
-
-
-
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }

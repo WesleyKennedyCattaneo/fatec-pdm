@@ -1,4 +1,4 @@
-package com.example.projetofatec
+package com.nubgames.projetofatec
 
 import io.flutter.embedding.android.FlutterActivity
 

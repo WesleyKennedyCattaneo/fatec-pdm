@@ -2,16 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:projetofatec/tabs/sobre.dart';
 import 'package:projetofatec/tabs/home_tab.dart';
 import 'package:projetofatec/tabs/carrinho.dart';
-
-
-
 class MeusJogos extends StatelessWidget {
-
   GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
   static final List<String> _listViewData = [
-
-
-
     "Inicio",
     "Sobre-nós",
     "Minha Conta",
@@ -37,9 +30,6 @@ class MeusJogos extends StatelessWidget {
         );
     return Scaffold(
       backgroundColor: Colors.lightBlueAccent,
-
-
-
       key: _scaffoldKey,
 
       body: CustomScrollView(
@@ -67,13 +57,10 @@ class MeusJogos extends StatelessWidget {
           ),
           SliverGrid(
             gridDelegate:  SliverGridDelegateWithMaxCrossAxisExtent(
-
               maxCrossAxisExtent: 400.0,
               mainAxisSpacing: 5.0,
               crossAxisSpacing:  10.0,
               childAspectRatio:  4.0,
-
-
             ),
             delegate: SliverChildBuilderDelegate((BuildContext context, int index) {
               return Card (color: Colors.blue,
@@ -95,13 +82,9 @@ class MeusJogos extends StatelessWidget {
                     ),
                   )
                 ),
-
-
-
               );
 
             },
-
               childCount: 1,
             ),
           )
@@ -174,14 +157,8 @@ class MeusJogos extends StatelessWidget {
                           builder: (BuildContext context) => SobreDev()));
                 },
               )
-
-
-
-
-
             ],
           )
-
       ),
     );
   }

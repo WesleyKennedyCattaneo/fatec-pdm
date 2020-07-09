@@ -2,15 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:projetofatec/tabs/home_tab.dart';
 import 'package:projetofatec/tabs/meusjogos.dart';
 import 'package:projetofatec/tabs/carrinho.dart';
-
-
-
 class SobreDev extends StatelessWidget {
 
   GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
   static final List<String> _listViewData = [
-
-
 
     "Inicio",
     "Sobre-nós",
@@ -37,14 +32,9 @@ class SobreDev extends StatelessWidget {
         );
     return Scaffold(
       backgroundColor: Colors.blueAccent,
-
-
-
       key: _scaffoldKey,
-
       body: CustomScrollView(
         slivers: <Widget>[
-
           SliverAppBar(
             leading: IconButton(icon: const Icon(Icons.menu),
               onPressed:
@@ -62,13 +52,11 @@ class SobreDev extends StatelessWidget {
                 fontSize:  20.0,
                 fontWeight: FontWeight.bold,
               ),
-
               ),
               centerTitle: true,
               background:  Image.asset('assets/dev.png', fit: BoxFit.cover,),
             ),
           ),
-
 
           SliverToBoxAdapter(
             child:  Container(
@@ -78,19 +66,8 @@ class SobreDev extends StatelessWidget {
                     image: DecorationImage(
                         image: AssetImage('assets/foto.png'),
                         fit: BoxFit.contain)),
-
-
-
           ),
-
-
           ),
-
-
-
-
-
-
         ],
       ),
       drawer: Drawer(
@@ -160,14 +137,8 @@ class SobreDev extends StatelessWidget {
                           builder: (BuildContext context) => SobreDev()));
                 },
               )
-
-
-
-
-
             ],
           )
-
       ),
     );
   }

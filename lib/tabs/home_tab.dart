@@ -3,20 +3,16 @@ import 'package:projetofatec/tabs/carrinho.dart';
 import 'package:projetofatec/tabs/sobre.dart';
 import 'package:projetofatec/login_fatec.dart';
 import 'package:projetofatec/tabs/meusjogos.dart';
-
-
+import 'package:firebase_storage/firebase_storage.dart';
 class InicioTab extends StatelessWidget {
-
   GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
   static final List<String> _listViewData = [
-
     "Inicio",
     "Sobre-nós",
     "Minha Conta",
-    "Sair",
+    "Sir",
 
   ];
-
   @override
   Widget build(BuildContext context) {
     Widget _buildBodyBack() =>
@@ -140,15 +136,9 @@ class InicioTab extends StatelessWidget {
                         builder: (BuildContext context) => SobreDev()));
               },
             )
-
-
-
-
-
           ],
         )
-
       ),
     );
-  }
+}
 }
