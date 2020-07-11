@@ -121,7 +121,7 @@ import  'package:flutter/material.dart';
                                       ),
                                       child: TextFormField(
                                         decoration: InputDecoration(
-                                            labelText: 'Email'
+                                            labelText: 'Digite: plotze@outlook.com'
                                         ),
                                         onChanged: (input) => _email = input,
                                       ),
@@ -158,7 +158,7 @@ import  'package:flutter/material.dart';
                                       ),
                                       child: TextFormField(
                                         decoration: InputDecoration(
-                                            labelText: 'Password'
+                                            labelText: 'Digite: 123456'
                                         ),
                                         onChanged: (input) => _password = input,
                                         obscureText: true,

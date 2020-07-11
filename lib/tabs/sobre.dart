@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:projetofatec/tabs/home_tab.dart';
 import 'package:projetofatec/tabs/meusjogos.dart';
 import 'package:projetofatec/tabs/carrinho.dart';
+import 'package:projetofatec/Request1.dart';
+
 class SobreDev extends StatelessWidget {
 
   GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
@@ -104,6 +106,7 @@ class SobreDev extends StatelessWidget {
                           builder: (BuildContext context) => InicioTab()));
                 },
               ),
+
               ListTile(
                 leading:  Icon(Icons.account_circle),
                 //trailing:  Icon(Icons.home),
@@ -124,6 +127,18 @@ class SobreDev extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                           builder: (BuildContext context) => MeusJogos()));
+                },
+
+              ),
+              ListTile(
+                leading:  Icon(Icons.send),
+                //trailing:  Icon(Icons.home),
+                title: Text("Requisitar Jogo"),
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (BuildContext context) => Request1()));
                 },
               ),
               ListTile(

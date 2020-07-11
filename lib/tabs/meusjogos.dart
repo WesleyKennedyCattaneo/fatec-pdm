@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:projetofatec/tabs/sobre.dart';
 import 'package:projetofatec/tabs/home_tab.dart';
 import 'package:projetofatec/tabs/carrinho.dart';
+import 'package:projetofatec/request1.dart';
 class MeusJogos extends StatelessWidget {
   GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
   static final List<String> _listViewData = [
@@ -63,24 +64,31 @@ class MeusJogos extends StatelessWidget {
               childAspectRatio:  4.0,
             ),
             delegate: SliverChildBuilderDelegate((BuildContext context, int index) {
-              return Card (color: Colors.blue,
-                child: Container(
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage("assets/1.PNG"),
+              return Center(
 
-                      //fit: BoxFit.fitWidth,
-                      alignment: Alignment.centerLeft,
+                child: Card (color: Colors.blue,
+                  child: Container(
+                    alignment: (
+                    Alignment.center
                     ),
+
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: AssetImage("assets/1.PNG"),
+
+                        fit: BoxFit.fitHeight,
+                        alignment: Alignment.centerLeft,
+                      ),
+                    ),
+                    child:
+                    Container(
+                      child: Align(
+                        alignment:  Alignment.centerRight,
+                        child: Text("Nome do jogo: Archer\nTempo de jogo: 29 horas"),
+
+                      ),
+                    )
                   ),
-                  child:
-                  Container(
-                    child: Align(
-                      alignment:  Alignment.centerRight,
-                      child: Text("Nome do jogo: Archer\nTempo de jogo: 29 horas"),
-
-                    ),
-                  )
                 ),
               );
 
@@ -144,6 +152,18 @@ class MeusJogos extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                           builder: (BuildContext context) => InicioTab()));
+                },
+              ),
+
+              ListTile(
+                leading:  Icon(Icons.send),
+                //trailing:  Icon(Icons.home),
+                title: Text("Requisitar Jogo"),
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (BuildContext context) => Request1()));
                 },
               ),
               ListTile(

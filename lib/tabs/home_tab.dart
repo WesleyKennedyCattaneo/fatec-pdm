@@ -4,7 +4,9 @@ import 'package:projetofatec/tabs/sobre.dart';
 import 'package:projetofatec/login_fatec.dart';
 import 'package:projetofatec/tabs/meusjogos.dart';
 import 'package:firebase_storage/firebase_storage.dart';
+import 'package:projetofatec/request1.dart';
 class InicioTab extends StatelessWidget {
+
   GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
   static final List<String> _listViewData = [
     "Inicio",
@@ -103,6 +105,19 @@ class InicioTab extends StatelessWidget {
                         builder: (BuildContext context) => InicioTab()));
               },
             ),
+
+            ListTile(
+              leading:  Icon(Icons.send),
+              //trailing:  Icon(Icons.home),
+              title: Text("Requisitar Jogo"),
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (BuildContext context) => Request1()));
+              },
+            ),
+
             ListTile(
               leading:  Icon(Icons.payment),
               //trailing:  Icon(Icons.home),
